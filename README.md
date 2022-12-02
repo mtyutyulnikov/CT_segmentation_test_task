@@ -24,6 +24,8 @@
 
 Обучение модели происходит на кусках размером (48, 96, 96). Инференс происходит с помощью скользящего окна данного размера с перекрытием в 75%.
 
+В качестве лосс функции используется DiceLoss и BCELoss с pos_weight=3. 
+
 В качестве основы решения используется Pytorch Lightning, для трекинга WandB.
 
 Ссылка на результаты эксперимента: https://wandb.ai/mtyutyulnikov/lightning_logs/runs/24h25hvd?workspace=user-mtyutyulnikov
